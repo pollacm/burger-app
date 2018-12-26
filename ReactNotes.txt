@@ -1,2 +1,22 @@
 Add css classes to the project
 	Eject the project
+Creating a layout component
+	subfolder structure
+		src/containers
+		src/components
+		src/assets
+		src/hoc
+	Good practice once you come up with your design, to just spit out dummy text to make sure everything is tied together.
+Validating prop-types	
+	can restrict the types and values you receive for your props
+	there is another package for this [Does NOT work in functional components]
+		npm install --save prop-types
+			import PropTypes from 'prop-types';
+			below your class definition, right above your export, add
+				{YourObject}.propTypes = {
+					click: PropTypes.func,
+					name: PropTypes.string.isRequired,
+					age: PropTypes.number,
+					changed: PropTypes.func
+				}
+	
