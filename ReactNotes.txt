@@ -19,4 +19,7 @@ Validating prop-types
 					age: PropTypes.number,
 					changed: PropTypes.func
 				}
-	
+Building the Burger
+	You typically name global constants in a file with all caps
+	to fill in parameters to a method when a handler was passed in 
+		{() => props.ingredientAdded(ctrl.type)}
