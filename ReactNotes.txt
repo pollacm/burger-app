@@ -4,6 +4,7 @@ Creating a layout component
 	subfolder structure
 		src/containers
 		src/components
+		src/components/UI
 		src/assets
 		src/hoc
 	Good practice once you come up with your design, to just spit out dummy text to make sure everything is tied together.
