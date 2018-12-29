@@ -40,3 +40,8 @@ For dynamic resizing of elements (i.e. logo), you can do this in the prop callin
 		<div className={classes.Logo} style={{height: props.height}}>
 	An alternative
 		could wrap that element in a div
+When setting state using a current value of state, you need to use the method declaration of setState using the previous state to be sure you have the correct state
+	this.setState((prevState) => 
+	{
+		return {showSideDrawer: !prevState.showSideDrawer}
+	});
