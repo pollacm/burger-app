@@ -7,7 +7,6 @@ const drawerToggle = (props) => (
         <div></div>
         <div></div>
     </div>
-    // <img src={burgerLogo} onClick={props.click} alt='burger'></img>
 );
 
 export default drawerToggle;
