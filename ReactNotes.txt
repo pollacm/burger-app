@@ -26,3 +26,17 @@ Building the Burger
 		{() => props.ingredientAdded(ctrl.type)}
 When you are setting classes from the compiled css dynamically
 	classes[props.btnType]
+For images
+	you need to import them
+		import burgerLogo from '../../assets/images/burger-logo.png';
+	Call that in the source of the image tag
+		<img src={burgerLogo} />
+Can reload the home page by putting "/" into the href of the link
+If setting a prop to "true", you only need to do below
+	<NavigationItem link="/" active>Burger Builder</NavigationItem>
+For dynamic resizing of elements (i.e. logo), you can do this in the prop calling it
+	<Logo height="80%" />
+	then...
+		<div className={classes.Logo} style={{height: props.height}}>
+	An alternative
+		could wrap that element in a div
