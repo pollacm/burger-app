@@ -45,3 +45,21 @@ When setting state using a current value of state, you need to use the method de
 	{
 		return {showSideDrawer: !prevState.showSideDrawer}
 	});
+Improving Performance
+	componentWillUpdate is depreciated [will retire in react 17], should use getSnapshotBeforeUpdate combined with componentDidUpdate instead	
+		getSnapshotBeforeUpdate(prevProps, prevState) {
+			console.log('[Modal] - getSnapshotBeforeUpdate');
+			return "1";
+		}
+
+		componentDidUpdate(prevProps, prevState, snapshot) {
+			console.log('[Modal] - componentDidUpdate', prevProps, prevState, snapshot);
+		}
+More on lifecycle hooks
+	componentDidMount and componentDidUpdate are import for causing side effects
+		reaching out to a web service and fetching things from there
+	WillUpdate
+		typically dont use these that often
+Folder Structure
+	Typcially if a component handles other components they could be considered containers because other components are contained within them
+	Burger Builder is essentially just wrapped with Layout, making layout a higher order component
