@@ -62,4 +62,4 @@ More on lifecycle hooks
 		typically dont use these that often
 Folder Structure
 	Typcially if a component handles other components they could be considered containers because other components are contained within them
-	Burger Builder is essentially just wrapped with Layout, making layout a higher order component
+	Burger Builder is essentially just wrapped with Layout, making layout a higher order component.
